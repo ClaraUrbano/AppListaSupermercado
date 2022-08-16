@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaSupermercado.View.AdicionarProduto"
+             BackgroundColor="Wheat">
+    
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Frame BackgroundColor="Peru" Padding="36" CornerRadius="0">
+                <Label Text="Adicionar Produto a Minha Lista" HorizontalTextAlignment="Center" TextColor="Wheat"  FontSize="36"/>
+            </Frame>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Nome Produto:" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Nome_Produto"/>
+
+                <Label Text="Quantidade:" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Quantidade"/>
+
+                <Label Text="Valor:" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Valor"/>
+
+                <Label Text="Valor Pago:" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Valor_Pago"/>
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" />
+            <Button Text="Adicionar Produto" TextColor="Wheat" Clicked="Button_Clicked_Adicionar" BackgroundColor="Peru"/>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
